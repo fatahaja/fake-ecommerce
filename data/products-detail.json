@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "name": "Wireless Headphones",
+    "category": "Electronics",
+    "price": 199.99,
+    "description": "Experience premium sound quality with our state-of-the-art wireless headphones. Featuring active noise cancellation technology that blocks out ambient noise, these headphones deliver crystal-clear audio with deep bass. The ergonomic design provides all-day comfort with soft memory foam ear cushions. With 30 hours of battery life and quick charge capability (5 minutes charge gives 3 hours of playback), you'll never miss a beat. Includes built-in microphone for hands-free calls and voice assistant compatibility.",
+    "imageUrl": "https://images.unsplash.com/photo-1505740106531-4243f3831c78?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "stock": 45,
+    "rating": 4.7
+  },
+  {
+    "id": "2",
+    "name": "Smartwatch",
+    "category": "Electronics",
+    "price": 249.08,
+    "description": "Stay connected and monitor your health with our advanced smartwatch. This sleek device features a vibrant always-on AMOLED display with customizable watch faces. Track your fitness with built-in GPS, heart rate monitoring, blood oxygen measurement, and sleep analysis. Receive notifications for calls, texts, and apps directly on your wrist. With water resistance up to 50 meters, it's perfect for swimming. The long-lasting battery provides up to 7 days of use on a single charge. Compatible with both iOS and Android smartphones.",
+    "imageUrl": "https://images.unsplash.com/photo-1660844817855-3ecc7ef21f12?q=80&w=786&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "stock": 32,
+    "rating": 4.5
+  },
+  {
+    "id": "3",
+    "name": "Classic T-Shirt",
+    "category": "Clothing",
+    "price": 29.50,
+    "description": "Our classic crewneck t-shirt is made from 100% premium organic cotton for exceptional softness and durability. The relaxed fit provides all-day comfort, while the reinforced double-stitched seams ensure long-lasting wear. Available in a wide range of colors to match any style. The fabric is pre-shrunk and maintains its shape wash after wash. Perfect for layering or wearing on its own, this versatile staple belongs in every wardrobe. Designed with a slightly longer body for better coverage and a modern silhouette.",
+    "imageUrl": "https://images.unsplash.com/photo-1633966887768-64f9a867bdba?q=80&w=803&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "stock": 128,
+    "rating": 4.3
+  },
+  {
+    "id": "4",
+    "name": "Fiction Novel",
+    "category": "Books",
+    "price": 15.99,
+    "description": "Immerse yourself in this captivating fiction novel that takes readers on an extraordinary journey through time and space. The story follows protagonist Emma Carter as she discovers a mysterious artifact that unlocks doors to parallel dimensions. With rich character development and intricate world-building, this page-turner explores themes of identity, destiny, and the power of choice. The 450-page hardcover edition features a beautiful dust jacket with artwork by award-winning illustrator Sarah Chen. Perfect for book clubs with discussion questions included in the back.",
+    "imageUrl": "https://images.unsplash.com/photo-1614544048536-0d28caf77f41?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "stock": 87,
+    "rating": 4.8
+  },
+  {
+    "id": "5",
+    "name": "Portable Bluetooth Speaker",
+    "category": "Electronics",
+    "price": 75.00,
+    "description": "Take your music anywhere with this powerful portable Bluetooth speaker. Despite its compact size, it delivers surprisingly rich, room-filling sound with deep bass thanks to its dual passive radiators. The rugged, waterproof design (IPX7 rated) makes it perfect for the beach, pool, or camping trips. Enjoy up to 20 hours of playtime on a single charge, and pair two speakers together for stereo sound. Built-in microphone allows for hands-free calls. The durable rubberized exterior and metal grille provide both style and protection against drops and bumps.",
+    "imageUrl": "https://images.unsplash.com/photo-1561558834-3b6b2aa22b6a?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "stock": 63,
+    "rating": 4.6
+  }
+]
