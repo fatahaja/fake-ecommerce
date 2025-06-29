@@ -3,10 +3,9 @@ import products from '@/data/products-detail.json';
 
 export async function GET(
   request: Request,
-  context: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const { params } = context;
     const { id } = await params;
     const product = products.find((p) => p.id === id);
 

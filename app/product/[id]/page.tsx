@@ -2,13 +2,13 @@ import { getProductById } from "@/helpers/fetch-helper";
 import ProductDetail, { IProductDetail } from "./product-detail";
 
 interface IProductPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 export default async function ProductPage({ params }: IProductPageProps) {
-  const { id } = await params
+  const { id } = await params;
   const product = await getProductById(id);
 
   if (!product) {
