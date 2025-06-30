@@ -58,7 +58,6 @@ const ProductsList = ({ products }: IProps) => {
                 <p className=" text-gray-600 text-xs md:text-sm">{product.description}</p>
               </div>
             </Link>
-
           </div>
         )
       })}

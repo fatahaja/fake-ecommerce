@@ -1,3 +1,5 @@
+'use client'
+
 import { SelectedSortType, useAppContext } from "@/app/context/app-context"
 import { useState } from "react"
 import CartCounter from "./cart-counter"
