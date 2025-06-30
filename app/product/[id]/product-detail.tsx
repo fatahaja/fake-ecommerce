@@ -3,6 +3,8 @@
 import { useAppContext } from "@/app/context/app-context"
 import CartCounter from "@/components/filters/cart-counter"
 import ProductImage from "@/components/products/product-image"
+import { delay } from "@/helpers/common-helper"
+import { useState } from "react"
 
 export interface IProductDetail {
   id: string,
@@ -19,7 +21,16 @@ interface IProps {
 }
 
 const ProductDetail = ({ product }: IProps) => {
-  const { cartCount, setCartCount } = useAppContext()
+  const { cartCount, setCartCount } = useAppContext();
+  const [addToCartLoading, setAddToCartLoading] = useState(false);
+
+  const handleAddToCart = async (count: number) => {
+    setAddToCartLoading(true);
+    await delay(1000);
+    setCartCount(count);
+    setAddToCartLoading(false);
+  }
+
   return (
     <div className="relative p-10 flex flex-col gap-4 justify-center md:flex-row md:gap-12">
       <div className="w-full min-w-32 max-w-xl overflow-hidden md:max-w-md">
@@ -34,9 +45,10 @@ const ProductDetail = ({ product }: IProps) => {
           <p>{product.description}</p>
         </section>
         <button
-          onClick={() => setCartCount(cartCount + 1)}
-          className="p-2 mt-8 cursor-pointer rounded-xl bg-orange-400 text-2xl font-semibold text-white"
-        >Add to cart</button>
+          disabled={addToCartLoading}
+          onClick={() => handleAddToCart(cartCount + 1)}
+          className={`p-2 mt-8 cursor-pointer rounded-xl text-2xl font-semibold text-white ${addToCartLoading ? 'bg-gray-400 animate-pulse cursor-progress' : 'bg-orange-400'}`}
+        >{addToCartLoading ? "Loading..." : "Add to cart"}</button>
       </div>
       <div className="fixed right-2 top-2">
         <CartCounter />

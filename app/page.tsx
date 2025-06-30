@@ -3,13 +3,19 @@ import ProductsList, { IProduct } from "@/components/products/product-list";
 import { categories } from "@/helpers/common-helper";
 import { getProducts } from "@/helpers/fetch-helper";
 
-export default async function Home() {
+async function ProductSection() {
   const products = await getProducts();
 
   return (
-    <div>
+    <ProductsList products={products as IProduct[]} />
+  );
+}
+
+export default async function Home() {
+  return (
+    <>
       <FilterSelector options={categories} />
-      <ProductsList products={products as IProduct[]} />
-    </div>
+      <ProductSection />
+    </>
   )
 }
